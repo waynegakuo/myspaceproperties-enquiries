@@ -11,7 +11,7 @@ export class EnquiryListComponent implements OnInit {
   constructor( public enquiryService: EnquiryService) { }
   enquiryArray = [];
   showDeleteMessage: boolean;
-  searchText: '';
+  searchText = '';
 
   ngOnInit() {
     this.enquiryService.getEnquiries().subscribe(
