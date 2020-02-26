@@ -8,7 +8,7 @@ import {EnquiryService} from '../shared/enquiry.service';
 })
 export class EnquiryListComponent implements OnInit {
 
-  constructor( private enquiryService: EnquiryService) { }
+  constructor( public enquiryService: EnquiryService) { }
   enquiryArray = [];
   showDeleteMessage: boolean;
   searchText: '';

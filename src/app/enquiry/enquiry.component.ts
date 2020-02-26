@@ -9,7 +9,7 @@ import { EnquiryService } from '../shared/enquiry.service';
 })
 export class EnquiryComponent implements OnInit {
 
-  constructor(private enquiryService: EnquiryService) { }
+  constructor(public enquiryService: EnquiryService) { }
   submitted: boolean;
   showSuccessMessage: boolean;
   formControls = this.enquiryService.form.controls;
