@@ -9,12 +9,14 @@ import { EnquiryComponent } from './enquiry/enquiry.component';
 import { EnquiryListComponent } from './enquiry-list/enquiry-list.component';
 import { EnquiryService } from './shared/enquiry.service';
 import { environment } from '../environments/environment';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EnquiryComponent,
-    EnquiryListComponent
+    EnquiryListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
