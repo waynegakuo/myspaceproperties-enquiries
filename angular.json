@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "myspaceproperties-enquiries"
+    }
+  },
+  "defaultProject": "myspaceproperties-enquiries",
+  "cli": {
+    "analytics": "bf8ed7dc-905b-45e5-b383-fd8f081f3c30"
+  }
 }
