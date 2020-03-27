@@ -6,8 +6,8 @@
 <table class="table table-sm">
     <thead>
         <th>Full Name</th>
-        <th>Email</th>
         <th>Contact</th>
+        <th>Location</th>
         <th>Size</th>
         <th>Price</th>
         <th></th>
@@ -15,8 +15,8 @@
     <ng-container *ngFor="let enquiry of enquiryArray">
         <tr class="table-dark" *ngIf="filterCondition(enquiry)">
             <td>{{enquiry.fullName}}</td>
-            <td>{{enquiry.email}}</td>
             <td>{{enquiry.phoneNumber}}</td>
+            <td>{{enquiry.location}}</td>
             <td>{{enquiry.size}}</td>
             <td>{{enquiry.price}}</td>
             <td>

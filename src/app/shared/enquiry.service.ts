@@ -14,8 +14,9 @@ export class EnquiryService {
   form = new FormGroup({
     $key: new FormControl(null),
     fullName: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.email),
+    // email: new FormControl('', Validators.email),
     phoneNumber: new FormControl('', [Validators.required, Validators.minLength(8)]),
+    location: new FormControl('', Validators.required),
     size: new FormControl(''),
     price: new FormControl(''),
   });
@@ -30,8 +31,9 @@ export class EnquiryService {
   insertEnquiry(enquiry) {
     this.enquiryList.push({
       fullName: enquiry.fullName,
-      email: enquiry.email,
+      // email: enquiry.email,
       phoneNumber: enquiry.phoneNumber,
+      location: enquiry.location,
       size: enquiry.size,
       price: enquiry.price
     });
@@ -46,8 +48,9 @@ export class EnquiryService {
   updateEnquiry(enquiry) {
     this.enquiryList.update(enquiry.$key, {
       fullName: enquiry.fullName,
-      email: enquiry.email,
+      // email: enquiry.email,
       phoneNumber: enquiry.phoneNumber,
+      location: enquiry.location,
       size: enquiry.size,
       price: enquiry.price
     });

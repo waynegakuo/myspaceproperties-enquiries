@@ -10,14 +10,14 @@
                     This field is required!
                 </div>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label>Email Address</label>
                 <input formControlName="email" class="form-control"
                     [ngClass]="{'is-invalid': submitted && formControls.email.errors}">
                 <div class="invalid-feedack" *ngIf="submitted && formControls.email.errors">
                     Invalid Email Address!
                 </div>
-            </div>
+            </div> -->
             <div class="form-group">
                 <label>Phone Number</label>
                 <input formControlName="phoneNumber" class="form-control"
@@ -25,6 +25,14 @@
                 <div class="invalid-feedack" *ngIf="submitted && formControls.phoneNumber.errors">
                     <label *ngIf="formControls.phoneNumber.errors.required">This field is required!</label>
                     <label *ngIf="formControls.phoneNumber.errors.minlength">Atleast 8 numbers!</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Location</label>
+                <input formControlName="location" class="form-control"
+                    [ngClass]="{'is-invalid': submitted && formControls.location.errors}">
+                <div class="invalid-feedack" *ngIf="submitted && formControls.location.errors">
+                    This field is required!
                 </div>
             </div>
             <div class="form-group">
